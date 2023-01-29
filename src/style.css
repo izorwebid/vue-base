@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* brandon */
+  @font-face {
+    font-family: "Brandontext";
+    src: url("/fonts/BrandonText/BrandonText-Thin.otf") format("opentype");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Brandontext";
+    src: url("/fonts/BrandonText/brandontext-light-webfont.eot");
+    src: url("/fonts/BrandonText/brandontext-light-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/fonts/BrandonText/brandontext-light-webfont.woff") format("woff"),
+      url("/fonts/BrandonText/brandontext-light-webfont.ttf") format("truetype"),
+      url("/fonts/BrandonText/brandontext-light-webfont.svg#museo_sans900_italic")
+        format("svg");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Brandontext";
+    src: url("/fonts/BrandonText/brandontext-regular-webfont.eot");
+    src: url("/fonts/BrandonText/brandontext-regular-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/fonts/BrandonText/brandontext-regular-webfont.woff") format("woff"),
+      url("/fonts/BrandonText/brandontext-regular-webfont.ttf")
+        format("truetype"),
+      url("/fonts/BrandonText/brandontext-regular-webfont.svg#museo_sans900_italic")
+        format("svg");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Brandontext";
+    src: url("/fonts/BrandonText/brandontext-medium-webfont.eot");
+    src: url("/fonts/BrandonText/brandontext-medium-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/fonts/BrandonText/brandontext-medium-webfont.woff") format("woff"),
+      url("/fonts/BrandonText/brandontext-medium-webfont.ttf")
+        format("truetype"),
+      url("/fonts/BrandonText/brandontext-medium-webfont.svg#museo_sans900_italic")
+        format("svg");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Brandontext";
+    src: url("/fonts/BrandonText/brandontext-bold-webfont.eot");
+    src: url("/fonts/BrandonText/brandontext-bold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/fonts/BrandonText/brandontext-bold-webfont.woff") format("woff"),
+      url("/fonts/BrandonText/brandontext-bold-webfont.ttf") format("truetype"),
+      url("/fonts/BrandonText/brandontext-bold-webfont.svg#brandontext-bold")
+        format("svg");
+    font-weight: 700;
+  }
+
+  /* lato*/
+  @font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Light.woff") format("woff");
+    src: url("/fonts/Lato/Lato-Light.woff2") format("woff2");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Regular.woff") format("woff");
+    src: url("/fonts/Lato/Lato-Regular.woff2") format("woff2");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Bold.woff") format("woff");
+    src: url("/fonts/Lato/Lato-Bold.woff2") format("woff2");
+    font-weight: 700;
+  }
+
+  html {
+    font-family: brandontext-regular, Lato-regular;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
